@@ -1,0 +1,106 @@
+.banners {
+    --banners-gap: 0.5rem;
+    --banners-column: calc(25% - var(--banners-gap));
+
+    display: grid;
+    grid-template-columns: var(--banners-column) var(--banners-column) var(--banners-column) var(--banners-column);
+    grid-template-rows: 34vh 33vh 33vh;
+    grid-template-areas: "banner01 banner01 banner01 banner02"
+                        "banner01 banner01 banner01 banner03"
+                        "banner04 banner04 banner05 banner06";
+    row-gap: var(--banners-gap);
+    column-gap: var(--banners-gap);
+
+    margin-bottom: 2rem;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    box-sizing: border-box;
+
+    bottom: 0;
+
+    width: 100%;
+    height: 80px;
+
+    text-align: center;
+
+    background-color: var(--preto-leve);
+}
+
+.banner01 {
+    grid-area: banner01;
+    background: url(../img/fortnite.jpg) center / cover no-repeat;
+}
+
+
+.banner02 {
+    grid-area: banner02;
+    background: url(../img/pubg.jpg) center / cover no-repeat;
+}
+
+.banner03 {
+    grid-area: banner03;
+    background: url(../img/slack.png) center / cover no-repeat;
+}
+
+.banner05 {
+    grid-area: banner05;
+    background: url(../img/cs-go.jpg) center / cover no-repeat;
+}
+
+.banner06 {
+    grid-area: banner06;
+    background: url(../img/whatsapp.png) center / cover no-repeat;
+}
+
+.banner__links {
+    --banner-links-gap: 0.5rem;
+    --banner-links-gap-column: calc((50% - var(--banner-links-gap)/2));
+
+    grid-area: banner04;
+
+    display: grid;
+    row-gap: var(--banner-links-gap);
+    column-gap: var(--banner-links-gap);
+    grid-template-columns: var(--banner-links-gap-column) var(--banner-links-gap-column);
+    grid-template-rows: var(--banner-links-gap-column) var(--banner-links-gap-column);
+    grid-template-areas: "um dois"
+                        "tres quatro";
+}
+
+.banner__texto {
+    display: flex;
+    align-items: center;
+
+    border: var(--cinza) solid 1px;
+
+    background-color: var(--branco);
+
+    padding-left: 1rem;
+}
+
+.banner__links-01 {
+    grid-area: um;
+}
+
+.banner__links-02 {
+    grid-area: dois;
+}
+
+.banner__links-03 {
+    grid-area: tres;
+}
+
+.banner__links-04 {
+    grid-area: quatro;
+}

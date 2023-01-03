@@ -1,0 +1,104 @@
+@import url(_variants.css);
+
+.container {
+    padding: 0 var(--espacamentos-laterais);
+}
+
+body {
+    display: grid;
+    grid-template-rows: 80px auto auto;
+    grid-template-areas: "cabecalho"
+                        "conteudo"
+                        "rodape";
+
+    font-family: var(--font-roboto);
+
+    color: var(--preto);
+
+    background-color: var(--cor-de-fundo);
+}
+
+.font-banner {
+    color: var(--prata);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* CSS para as caixas de conteúdo */
+
+.secao__boxes {
+    display: grid;
+    grid-template-rows: 71px 640px;
+    grid-template-areas: "title"
+                        "content";
+}
+
+.secao__title {
+    grid-area: title;
+}
+
+.boxes {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-areas: "box-um box-dois box-tres box-quatro box-cinco";
+    column-gap: var(--boxes-gap);
+
+}
+
+.box__um {
+    grid-area: box-um;
+}
+
+.box__dois {
+    grid-area: box-dois;
+}
+
+.box__tres {
+    grid-area: box-tres;
+}
+
+.box__quatro {
+    grid-area: box-quatro;
+}
+
+.box__cinco {
+    grid-area: box-cinco;
+}
+
+.box {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "img"
+                        "content";
+}
+
+.image__box {
+    grid-area: img;
+}
+
+.content__box {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+    grid-template-areas: "title"
+                        "date"
+                        "content";
+    background: var(--branco);
+    padding: 2rem 1rem;
+}
+
+.content__box-title {
+    grid-area: title;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.content__box-date {
+    grid-area: date;
+    color: var(--cinza);
+}
+
+.content__box-text {
+    grid-area: content;
+}

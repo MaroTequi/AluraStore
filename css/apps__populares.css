@@ -1,0 +1,11 @@
+.apps__populares {
+}
+
+.apps__populares-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--cinza);
+
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}

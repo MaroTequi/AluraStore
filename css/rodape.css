@@ -1,0 +1,12 @@
+.rodape {
+    background: white;
+
+    grid-area: rodape;
+    
+    line-height: 50px;
+    text-align: center;
+}
+
+.rodape p::before{
+    content: '® ';
+}

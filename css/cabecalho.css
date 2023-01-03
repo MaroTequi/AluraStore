@@ -1,0 +1,79 @@
+.cabecalho {
+    grid-area: cabecalho;
+
+    --tamanho-icons: 2rem;
+    --distancia-icons-left: 10px;
+    --distancia-icons-top: 8px;
+
+    margin: 1rem 0;
+    padding: 0 2rem;
+}
+
+.cabecalho__lista {
+    display: flex;
+}
+
+.cabecalho__lista-item {
+
+    text-align: center;
+
+    display: block;
+    position: relative;
+
+    margin: 0 1rem;
+    padding: 1rem 1rem 1rem 3rem;
+
+    box-sizing: border-box;
+}
+
+.cabecalho__lista-item--um::before {
+    display: block;
+
+    position: absolute;
+
+    top: var(--distancia-icons-top);
+    left: var(--distancia-icons-left);
+
+    width: var(--tamanho-icons);
+    height: var(--tamanho-icons);
+
+    content: '';
+
+    background: url(../img/icons/casinha.jpg) center / contain no-repeat;
+}
+
+.cabecalho__lista-item--dois::before {
+    display: block;
+
+    position: absolute;
+
+    top: var(--distancia-icons-top);
+    left: var(--distancia-icons-left);
+
+    width: var(--tamanho-icons);
+    height: var(--tamanho-icons);
+
+    content: '';
+
+    background: url(../img/icons/smartphone.jpg) center / contain no-repeat;
+}
+
+.cabecalho__lista-item--tres::before {
+    display: block;
+
+    position: absolute;
+
+    top: var(--distancia-icons-top);
+    left: var(--distancia-icons-left);
+
+    width: var(--tamanho-icons);
+    height: var(--tamanho-icons);
+
+    content: '';
+
+    background: url(../img/icons/controle.jpg) center / contain no-repeat;
+}
+
+.cabecalho__lista-item:hover {
+    border-bottom: solid blue 1px;
+}

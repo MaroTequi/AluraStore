@@ -1,0 +1,13 @@
+:root {
+    --cor-de-fundo: #f0f0f1;
+    --preto: #333333;
+    --preto-leve: #3339;
+    --cinza: #CCCCCC;
+    --prata: #E6E8FA;
+    --branco: #FFF;
+
+    --espacamentos-laterais: 2rem;
+
+    --font-roboto: 'Roboto', sans-serif;
+    --boxes-gap: 1rem;
+}

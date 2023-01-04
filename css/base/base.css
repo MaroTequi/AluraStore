@@ -28,9 +28,11 @@ body {
 
 .secao__boxes {
     display: grid;
-    grid-template-rows: 71px 640px;
+    grid-template-rows: 44px 30rem;
     grid-template-areas: "title"
-                        "content";
+                        "conteudo";
+    
+    padding-bottom: 2rem;
 }
 
 .secao__title {
@@ -38,12 +40,12 @@ body {
 }
 
 .boxes {
-    grid-area: content;
+    --tamanho-colunas: 20fr;
+    grid-area: conteudo;
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-columns: var(--tamanho-colunas) var(--tamanho-colunas) var(--tamanho-colunas) var(--tamanho-colunas) var(--tamanho-colunas);
     grid-template-areas: "box-um box-dois box-tres box-quatro box-cinco";
     column-gap: var(--boxes-gap);
-
 }
 
 .box__um {
@@ -71,16 +73,119 @@ body {
     grid-template-rows: 30% 70%;
     grid-template-areas: "img"
                         "content";
+    box-sizing: border-box;
 }
+
+/* Imagens das boxes */
 
 .image__box {
     grid-area: img;
+    width: 100%;
 }
+
+
+/* seção jogos__populares */
+
+.jogos__populares 
+.box:nth-child(1) >
+.image__box {
+    background: url(../../img/slack.png) center / cover no-repeat;
+}
+
+.jogos__populares 
+.box:nth-child(2) >
+.image__box {
+    background: url(../../img/whatsapp.png) center / cover no-repeat;
+}
+
+.jogos__populares 
+.box:nth-child(3) >
+.image__box {
+    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+}
+
+.jogos__populares 
+.box:nth-child(4) >
+.image__box {
+    background: url(../../img/trello.jpg) center / cover no-repeat;
+}
+
+.jogos__populares 
+.box:nth-child(5) >
+.image__box {
+    background: url(../../img/skype.png) center / cover no-repeat;
+}
+
+/* seção em__destaque */
+
+.em__destaque 
+.box:nth-child(1) >
+.image__box {
+    background: url(../../img/slack.png) center / cover no-repeat;
+}
+
+.em__destaque 
+.box:nth-child(2) >
+.image__box {
+    background: url(../../img/whatsapp.png) center / cover no-repeat;
+}
+
+.em__destaque 
+.box:nth-child(3) >
+.image__box {
+    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+}
+
+.em__destaque 
+.box:nth-child(4) >
+.image__box {
+    background: url(../../img/trello.jpg) center / cover no-repeat;
+}
+
+.em__destaque 
+.box:nth-child(5) >
+.image__box {
+    background: url(../../img/skype.png) center / cover no-repeat;
+}
+
+/* seção lancamentos */
+
+.lancamentos 
+.box:nth-child(1) >
+.image__box {
+    background: url(../../img/slack.png) center / cover no-repeat;
+}
+
+.lancamentos 
+.box:nth-child(2) >
+.image__box {
+    background: url(../../img/whatsapp.png) center / cover no-repeat;
+}
+
+.lancamentos 
+.box:nth-child(3) >
+.image__box {
+    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+}
+
+.lancamentos 
+.box:nth-child(4) >
+.image__box {
+    background: url(../../img/trello.jpg) center / cover no-repeat;
+}
+
+.lancamentos 
+.box:nth-child(5) >
+.image__box {
+    background: url(../../img/skype.png) center / cover no-repeat;
+}
+
+/* Conteúdo da box */
 
 .content__box {
     grid-area: content;
     display: grid;
-    grid-template-rows: 20% 10% 70%;
+    grid-template-rows: 10fr 10fr 80fr;
     grid-template-areas: "title"
                         "date"
                         "content";
@@ -101,4 +206,7 @@ body {
 
 .content__box-text {
     grid-area: content;
+
+    text-align: justify;
+    line-height: 21px;
 }

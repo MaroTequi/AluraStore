@@ -37,6 +37,12 @@ body {
 
 .secao__title {
     grid-area: title;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--cinza);
+
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .boxes {
@@ -83,37 +89,68 @@ body {
     width: 100%;
 }
 
+/* seção apps__populares */
+
+.apps__populares 
+.box:nth-child(1) >
+.image__box {
+    background: url(../../img/slack.png) center / cover no-repeat;
+}
+
+.apps__populares 
+.box:nth-child(2) >
+.image__box {
+    background: url(../../img/whatsapp.png) center / cover no-repeat;
+}
+
+.apps__populares 
+.box:nth-child(3) >
+.image__box {
+    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+}
+
+.apps__populares 
+.box:nth-child(4) >
+.image__box {
+    background: url(../../img/trello.jpg) center / cover no-repeat;
+}
+
+.apps__populares 
+.box:nth-child(5) >
+.image__box {
+    background: url(../../img/skype.png) center / cover no-repeat;
+}
 
 /* seção jogos__populares */
 
 .jogos__populares 
 .box:nth-child(1) >
 .image__box {
-    background: url(../../img/slack.png) center / cover no-repeat;
+    background: url(../../img/fortnite.jpg) center / cover no-repeat;
 }
 
 .jogos__populares 
 .box:nth-child(2) >
 .image__box {
-    background: url(../../img/whatsapp.png) center / cover no-repeat;
+    background: url(../../img/pubg.jpg) center / cover no-repeat;
 }
 
 .jogos__populares 
 .box:nth-child(3) >
 .image__box {
-    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+    background: url(../../img/cs-go.jpg) center / cover no-repeat;
 }
 
 .jogos__populares 
 .box:nth-child(4) >
 .image__box {
-    background: url(../../img/trello.jpg) center / cover no-repeat;
+    background: url(../../img/lol.jpg) center / cover no-repeat;
 }
 
 .jogos__populares 
 .box:nth-child(5) >
 .image__box {
-    background: url(../../img/skype.png) center / cover no-repeat;
+    background: url(../../img/gta-v.jpg) center / cover no-repeat;
 }
 
 /* seção em__destaque */
@@ -121,31 +158,31 @@ body {
 .em__destaque 
 .box:nth-child(1) >
 .image__box {
-    background: url(../../img/slack.png) center / cover no-repeat;
+    background: url(../../img/fortnite.jpg) center / cover no-repeat;
 }
 
 .em__destaque 
 .box:nth-child(2) >
 .image__box {
-    background: url(../../img/whatsapp.png) center / cover no-repeat;
+    background: url(../../img/pubg.jpg) center / cover no-repeat;
 }
 
 .em__destaque 
 .box:nth-child(3) >
 .image__box {
-    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+    background: url(../../img/slack.png) center / cover no-repeat;
 }
 
 .em__destaque 
 .box:nth-child(4) >
 .image__box {
-    background: url(../../img/trello.jpg) center / cover no-repeat;
+    background: url(../../img/whatsapp.png) center / cover no-repeat;
 }
 
 .em__destaque 
 .box:nth-child(5) >
 .image__box {
-    background: url(../../img/skype.png) center / cover no-repeat;
+    background: url(../../img/cs-go.jpg) center / cover no-repeat;
 }
 
 /* seção lancamentos */
@@ -153,31 +190,31 @@ body {
 .lancamentos 
 .box:nth-child(1) >
 .image__box {
-    background: url(../../img/slack.png) center / cover no-repeat;
+    background: url(../../img/brawl-stars.jpg) center / cover no-repeat;
 }
 
 .lancamentos 
 .box:nth-child(2) >
 .image__box {
-    background: url(../../img/whatsapp.png) center / cover no-repeat;
+    background: url(../../img/organizze.jpeg) center / cover no-repeat;
 }
 
 .lancamentos 
 .box:nth-child(3) >
 .image__box {
-    background: url(../../img/telegram.jpeg) center / cover no-repeat;
+    background: url(../../img/onefotball.jpeg) center / cover no-repeat;
 }
 
 .lancamentos 
 .box:nth-child(4) >
 .image__box {
-    background: url(../../img/trello.jpg) center / cover no-repeat;
+    background: url(../../img/free-fire.jpg) center / cover no-repeat;
 }
 
 .lancamentos 
 .box:nth-child(5) >
 .image__box {
-    background: url(../../img/skype.png) center / cover no-repeat;
+    background: url(../../img/mario-kart.jpg) center / cover no-repeat;
 }
 
 /* Conteúdo da box */

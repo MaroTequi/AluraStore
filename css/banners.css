@@ -1,6 +1,7 @@
 .banners {
     --banners-gap: 0.5rem;
     --banners-column: calc(25% - var(--banners-gap));
+    --banners-row: 44vh;
 
     display: grid;
     grid-template-columns: var(--banners-column) var(--banners-column) var(--banners-column) var(--banners-column);
@@ -41,7 +42,6 @@
     grid-area: banner01;
     background: url(../img/fortnite.jpg) center / cover no-repeat;
 }
-
 
 .banner02 {
     grid-area: banner02;

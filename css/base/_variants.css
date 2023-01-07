@@ -2,9 +2,13 @@
     --cor-de-fundo: #f0f0f1;
     --preto: #333333;
     --preto-leve: #3339;
+    --preto-leve-translucido: #333333cc;
     --cinza: #CCCCCC;
+    --azul-esverdeado: #05EDB7;
     --prata: #E6E8FA;
     --branco: #FFF;
+
+    --tempo-animacao: 0.7s;
 
     --espacamentos-laterais: 2rem;
 

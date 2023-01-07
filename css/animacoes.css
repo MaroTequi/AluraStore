@@ -1,0 +1,19 @@
+.banner__texto:hover {
+    color: var(--branco);
+    background: var(--azul-esverdeado);
+    font-weight: 900;
+
+    transition: var(--tempo-animacao);
+}
+.font-banner:hover
+.banner-titulo {
+    background-color: var(--preto-leve-translucido);
+}
+
+.secao__title>a:hover,
+.font-banner:hover
+.banner-titulo {
+    color: var(--azul-esverdeado);
+
+    transition: var(--tempo-animacao);
+}

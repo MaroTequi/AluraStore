@@ -41,7 +41,7 @@
       display: grid;
     }
 
-    .box__quatro, .box__cinco {
+    .box__quatro, .box__cinco  {
       display: none;
     }
 }
